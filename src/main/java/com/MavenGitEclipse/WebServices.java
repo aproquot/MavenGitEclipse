@@ -77,6 +77,7 @@ public class WebServices {
 			while ((test = br.readLine()) != null){
 				output.append(test);
 			}
+			br.close();
 			conn.disconnect();
 		}
 		catch (IOException | NoSuchAlgorithmException | KeyManagementException e){
